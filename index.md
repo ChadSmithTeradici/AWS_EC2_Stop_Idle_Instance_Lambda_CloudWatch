@@ -28,6 +28,16 @@ This guide will be focusing on one of the more expensive instance types, the G4d
 
 # Configuring EC2 G4dn idle resource shut down workflow #
 ## Create an IAM Role ##
+Create an [IAM role](https://console.aws.amazon.com/iamv2/home?#/roles) to provide the proper permissions for the end-user to start and connect to defined instances.
+
+1. Go to IAM -> Role -> Create Role. 
+    
+1. Select the **Create role** button
+
+    ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateRole.jpg)
+    
+Select the **JSON** tab, it will open in separate web browser tab. Click on tab JSON and paste the following text. Also add in the **ARN** for the **EC2 Instances** captured in the previous step when creating or assigning the EC2 instances to the user.
+
 ## Create an IAM Role ##
 ## Create CloudWatch Events ##
 # Monitoring EC2 Gd4n idle resource shut down workflow #
