@@ -27,6 +27,7 @@ This guide will be focusing on one of the more expensive instance types, the G4d
 1. If one or more of those periods are above 5% it will continue to poll every 15 minutes interval. 
 
 ## Configuring EC2 G4dn idle resource shut down workflow ##
+# Create an IAM Role #
 
 ## Monitoring EC2 Gd4n idle resource shut down workflow ##
 
