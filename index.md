@@ -26,7 +26,11 @@ A brief review of the workflow:
 1. If the CloudWatch detect  < 5% utilization three time in 15 minutes peroid, it will shut down the instance.
 1. If one or more of those periods are above 5% it will continue to poll every 15 minutes interval. 
 
-## Configuring idle resource shutdown workflow ##
+## Configuring EC2 G4dn idle resource shutdown workflow ##
+
+## Monitoring EC2 Gd4n idle resource shutdown workflow ##
+
+## Disabling EC2 Gd4n idle rerourse Shut down workflow ##
 
 
 
