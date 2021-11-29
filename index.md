@@ -26,12 +26,12 @@ This guide will be focusing on one of the more expensive instance types, the G4d
 1. If the CloudWatch detect  < 5% utilization three time in 15 minutes peroid, it will shut down the instance.
 1. If one or more of those periods are above 5% it will continue to poll every 15 minutes interval. 
 
-## Configuring EC2 G4dn idle resource shut down workflow ##
-# Create an IAM Role #
+# Configuring EC2 G4dn idle resource shut down workflow #
+## Create an IAM Role ##
 
-## Monitoring EC2 Gd4n idle resource shut down workflow ##
+# Monitoring EC2 Gd4n idle resource shut down workflow #
 
-## Disabling EC2 Gd4n idle rerource shut down workflow ##
+# Disabling EC2 Gd4n idle rerource shut down workflow #
 
 
 
