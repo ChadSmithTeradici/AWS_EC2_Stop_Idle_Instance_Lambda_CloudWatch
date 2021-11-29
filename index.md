@@ -1,9 +1,9 @@
 ---
-title: Quick connect to instances in AWS with a PCoIP session
-description: Script that powers-up Instances, identified external IPs and establishes a PCoIP connection in a single step.
+title: Control EC2 cost by shutting down idle instances
+description: Monitor and shutdown G4dn types instances per region with AWS Lamdba and CloudWatch Services
 author: chad-m-smith
-tags: AWS, EC2, PCoIP, Power Management
-date_published: 2021-11-11
+tags: AWS, EC2, Lamdba, CloudWatch, Power Management
+date_published: 2021-11-29
 ---
 
 Chad Smith | Technical Alliance Architect at Teradici | HP
