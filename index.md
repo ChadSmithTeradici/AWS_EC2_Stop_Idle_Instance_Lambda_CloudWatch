@@ -36,7 +36,13 @@ Create an [IAM role](https://console.aws.amazon.com/iamv2/home?#/roles) to provi
 
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateRole.jpg)
     
-Select the **JSON** tab, it will open in separate web browser tab. Click on tab JSON and paste the following text. Also add in the **ARN** for the **EC2 Instances** captured in the previous step when creating or assigning the EC2 instances to the user.
+Select the **Next Permissions** button, 
+
+1. In Filter policies type in 'EC2Full' and Select the **AmazonEC2FullAccess**
+    **Note:** Selecting Full access isn't recommended for most production environment, consult with your security team on narrowing down permission that this           service will run.
+    
+    ![image](
+    
 
 ## Create an IAM Role ##
 ## Create CloudWatch Events ##
