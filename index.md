@@ -10,7 +10,9 @@ Chad Smith | Technical Alliance Architect at Teradici | HP
 
 <p style="background-color:#CAFACA;"><i>Contributed by Teradici employees.</i></p>
 
-This script is designed to allow Teradici end users to power on their EC2 instances remotely without having to access the EC2 dashboard. It will also find the public or elastic IP of the instances and pass the connection info to a PCoIP connection string automatically. While larger Teradici deployments will benefit from [Cloud Access Manager (CASM)](https://www.teradici.com/web-help/cas_manager_as_a_service/) when multiple instances reside in the same region. It is cost prohibited to run CASM connection gateways (CAC) when only a handful of user’s instances per region are needed and/or customer are interested in leveraging AWS local zones where the cost of perpetually running a CAC is cost prohibited.
+Controlling costs are important component in adopting cloud. It’s difficult to balance giving your remote creators to access to their resources but at ensuring that there aren’t any ‘runaway costs’ associated to their freedom of work remotely.  
+
+This guide will be focusing on one of the more expensive instance types, the G4dn (NVIDIA T4) instance type due to its high hourly consumption rate but it can apply to any instance type as well. Also, Teradici CAS agent software installs a idle resource management service that require some additional registry on each workstation to achieve a similar result. The difficultly with this service is that it often set-up on a per-host and many times mis-configured or never setup completely. The proposed solution is region wide, automatically applied on instance start-up and doesn’t require and configuration on the host system. 
 
 **AWS EC2 PCoIP Quick connect script workflow, components and dependencies.**
 
