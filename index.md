@@ -28,7 +28,8 @@ This guide will be focusing on one of the more expensive instance types, the G4d
 
 # Configuring EC2 G4dn idle resource shut down workflow #
 ## Create an IAM Role ##
-
+## Create an IAM Role ##
+## Create CloudWatch Events ##
 # Monitoring EC2 Gd4n idle resource shut down workflow #
 
 # Disabling EC2 Gd4n idle rerource shut down workflow #
