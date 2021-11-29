@@ -17,3 +17,16 @@ This guide will be focusing on one of the more expensive instance types, the G4d
 **AWS EC2 G4dn idle resource shutdown workflow, components and dependencies.**
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/StopLongRunninginstances.jpg)
+
+A brief review of the workflow:
+1. G4dn instance type is created by end-user or programmatically created in a region where workflow is deployed (regardless of AZ, subnet)
+1. A defined Lambda EC2 event trigger assoicaed to a Lamdba function (λ) will execute.
+1. If the Instance type is in the G4dn instance family, it will create a CloudWatch event assoicated to the EC2 instances-id.
+1. CloudWatch will continue to ‘watch’ the instance and poll the instances CPU utilization every 5 minutes 
+1. If the CloudWatch detect  < 5% utilization three time in 15 minutes peroid, it will shut down the instance.
+1. If one or more of those periods are above 5% it will continue to poll every 15 minutes interval. 
+
+
+
+
+
