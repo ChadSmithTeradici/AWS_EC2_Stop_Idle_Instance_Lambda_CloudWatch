@@ -18,7 +18,7 @@ This guide will be focusing on one of the more expensive instance types, the G4d
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/StopLongRunninginstances.jpg)
 
-A brief review of the workflow:
+**A brief description of each step in workflow:**
 1. G4dn instance type is created by end-user or programmatically created in a region where workflow is deployed (regardless of AZ, subnet)
 1. A defined Lambda EC2 event trigger assoicaed to a Lamdba function (λ) will execute.
 1. If the Instance type is in the G4dn instance family, it will create a CloudWatch event assoicated to the EC2 instances-id.
