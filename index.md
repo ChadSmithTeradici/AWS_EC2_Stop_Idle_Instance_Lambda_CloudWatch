@@ -134,7 +134,7 @@ def lambda_handler(event, context):
 
 7. Finally, you want to deploy the saved code to run as your Lamdba function. To do this select the **Deploy** button ontop of the text editor tool.
 
-    ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/DeployPythonCode.jpg)
+     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/DeployPythonCode.jpg)
    
 **Note** there is notifcation status that will change from **Changes not deployed** to **Changes deployed**
 
