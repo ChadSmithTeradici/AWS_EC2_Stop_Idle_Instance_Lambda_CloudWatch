@@ -86,10 +86,14 @@ Next we will create a Lambda function. In the Lambda function, the function does
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AddTrigger1.jpg)
 
-1. Finally, drop in the Python code into the 
+1. Finally, drop in the Python code into the **Code Source** section of the Lamdba Dashboard. Ensure you are in the **Code** section of console.
 
-![image](
+![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CodeToolBar.jpg)
 
+- Remove any pre-populated python code
+- **Copy** the snippet of python code below
+- Ensure that **line 9** AlarmAction has the correct AWS region setup (Example: this code is focused on us-west-2),change if needed.
+''' AlarmActions       = ['arn:aws:automate:us-west-2:ec2:stop'],'''
 
 ```
 import boto3
