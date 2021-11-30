@@ -59,7 +59,15 @@ Next we will create a Lambda function. In the Lambda function, the function does
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateFunction.jpg)
 
-1. Within the create function wizard
+1. Within the create function wizard, select the **Author from scratch** option.
+
+![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AuthorFromScatch.jpg)
+
+1. Fill in the basic Lamdba funcation information:
+- Our example we named the Lamdba funcation **Stop_idle_EC2-G4dn_instance**
+- The Runtime field enter **Python 3.6**
+- Select Architecture type as: **x86_64**
+- Under Permission > Change default execution role > **Use existing role** > Choose the previously created IAM role above
 
 ![image](
 
