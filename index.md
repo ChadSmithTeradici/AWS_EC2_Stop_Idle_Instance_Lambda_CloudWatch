@@ -72,7 +72,7 @@ Next we will create a Lambda function. In the Lambda function, the function does
 
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/createFuncationBasic.jpg)
 
-1. Within the funcation overview dashboard, we will start by adding the Lamdba event **trigger** 
+4. Within the funcation overview dashboard, we will start by adding the Lamdba event **trigger** 
 - In the 'Select a trigger' box, select the **EventBridge (CloudWatch Events)** type
 - Under **Rule**, pick the **Create a new rule** option
 - Enter a **Rule name** to identify your rule, example : **Stop_idle_EC2-G4dn_Instances**
@@ -90,7 +90,7 @@ When successfully completed, a notification will appear says that all subsystem 
 
    ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/SuccessfulTrigger.jpg)
 
-1. Finally, drop in the Python code into the **Code Source** section of the Lamdba Dashboard. Ensure you are in the **Code** section of console.
+5. Finally, drop in the Python code into the **Code Source** section of the Lamdba Dashboard. Ensure you are in the **Code** section of console.
 
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CodeToolBar.jpg)
 
@@ -128,11 +128,11 @@ def lambda_handler(event, context):
     if instance.instance_type.startswith('g4dn'):
         put_cpu_alarm(instance_id)
 ```
-1. In the **Code Source** text editor, select the **File** > **Save** option
+7. In the **Code Source** text editor, select the **File** > **Save** option
 
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/SavedPythonCode.jpg)
 
-1. 
+8. 
 
 
 
