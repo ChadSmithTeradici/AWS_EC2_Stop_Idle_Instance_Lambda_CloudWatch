@@ -68,10 +68,13 @@ Next we will create a Lambda function. In the Lambda function, the function does
 - The Runtime field enter **Python 3.6**
 - Select Architecture type as: **x86_64**
 - Under Permission > Change default execution role > **Use existing role** > Choose the previously created IAM role above
+- Once the required fields are filled out, Select the **Create funcation** button to continue.
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/createFuncationBasic.jpg)
 
+1. Within the funcation overview dashboard, we will start by adding the **trigger** and **destintaion**
 
+![image](
 
 
 
