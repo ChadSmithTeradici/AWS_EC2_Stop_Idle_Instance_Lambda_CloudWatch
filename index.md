@@ -86,6 +86,42 @@ Next we will create a Lambda function. In the Lambda function, the function does
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AddTrigger1.jpg)
 
+1. Finally, drop in the Python code into the 
+
+![image](
+
+
+```
+import boto3
+
+
+def put_cpu_alarm(instance_id):
+    cloudWatch   = boto3.client('cloudwatch')
+    cloudWatch.put_metric_alarm(
+        AlarmName          = f'CPU_ALARM_{instance_id}',
+        AlarmDescription   = 'Alarm when server CPU does not exceed 5%',
+        AlarmActions       = ['arn:aws:automate:us-west-2:ec2:stop'],
+        MetricName         = 'CPUUtilization',
+        Namespace          = 'AWS/EC2' ,
+        Statistic          = 'Average',
+        Dimensions         = [{'Name': 'InstanceId', 'Value': instance_id}],
+        Period             = 900,
+        EvaluationPeriods  = 3,
+        Threshold          = 5,
+        ComparisonOperator = 'LessThanOrEqualToThreshold',
+        TreatMissingData   = 'notBreaching'
+    )
+
+
+def lambda_handler(event, context):
+    instance_id = event['detail']['instance-id']
+    ec2 = boto3.resource('ec2')
+    instance = ec2.Instance(instance_id)
+    if instance.instance_type.startswith('g4dn'):
+        put_cpu_alarm(instance_id)
+```
+
+
 
 
 
