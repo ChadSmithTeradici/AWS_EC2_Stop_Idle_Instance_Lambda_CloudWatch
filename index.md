@@ -41,8 +41,7 @@ Select the **Next Permissions** button,
 1. In Filter policies type in 'EC2Full' and Select the **AmazonEC2FullAccess**
     **Note:** Selecting Full access isn't recommended for most production environment, consult with your security team on narrowing down permission that this           service will run.
     
-    ![image](
-    
+    ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AttachPermission.jpg)    
 
 ## Create an IAM Role ##
 ## Create CloudWatch Events ##
