@@ -48,7 +48,7 @@ Select the **Next Permissions** button.
   
 1. After Option Tag section, 
 
-[!image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateRoleReview.jpg)
+    ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateRoleReview.jpg)
 
 ## Create an IAM Role ##
 ## Create CloudWatch Events ##
