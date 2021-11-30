@@ -128,6 +128,9 @@ def lambda_handler(event, context):
     if instance.instance_type.startswith('g4dn'):
         put_cpu_alarm(instance_id)
 ```
+1. In the **Code Source** text editor, select the **File** > **Save** option
+
+    ![image](
 
 
 
