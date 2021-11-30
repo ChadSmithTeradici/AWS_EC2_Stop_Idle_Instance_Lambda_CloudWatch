@@ -97,7 +97,7 @@ When successfully completed, a notification will appear says that all subsystem 
 - Remove any pre-populated python code
 - **Copy** the snippet of python code below
 - Ensure that **line 9** AlarmAction has the correct AWS region setup (Example: this code is focused on us-west-2),change if needed.
-''' AlarmActions       = ['arn:aws:automate:us-west-2:ec2:stop'],'''
+``` AlarmActions       = ['arn:aws:automate:us-west-2:ec2:stop'],```
 
 ```
 import boto3
