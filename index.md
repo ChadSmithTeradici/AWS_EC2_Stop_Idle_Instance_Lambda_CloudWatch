@@ -128,14 +128,17 @@ def lambda_handler(event, context):
     if instance.instance_type.startswith('g4dn'):
         put_cpu_alarm(instance_id)
 ```
-7. In the **Code Source** text editor, select the **File** > **Save** option
+6. In the **Code Source** text editor, select the **File** > **Save** option
 
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/SavedPythonCode.jpg)
 
-8. 
+7. Finally, you want to deploy the saved code to run as your Lamdba function. To do this select the **Deploy** button ontop of the text editor tool.
 
+    ![image](
+   
+**Note** there is notifcation status that will change from **Changes not deployed** to **Changes deployed**
 
-
+    ![image](
 
 ## Create CloudWatch events ##
 # Monitoring EC2 Gd4n idle resource shut down workflow #
