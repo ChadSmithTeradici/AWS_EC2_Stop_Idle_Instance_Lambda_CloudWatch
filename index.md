@@ -140,9 +140,9 @@ def lambda_handler(event, context):
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/PythonSuccDeploy.jpg)
 
-# Monitoring EC2 Gd4n idle resource shut down workflow #
+# Monitoring EC2 G4dn idle resource shut down workflow #
 
-# Disabling EC2 Gd4n idle rerource shut down workflow #
+# Disabling EC2 G4dn idle rerource shut down workflow #
 
 
 
