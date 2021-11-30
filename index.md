@@ -57,11 +57,11 @@ Next we will create a Lambda function. In the Lambda function, the function does
 
 1. Select a AWS region that has EC2 Instance type available, the Lamdba function is designed to run in the same region. If you have other instances in other regions / loca zones, you should duplicate this setup as well. Enter the [Lamda dashboard](console.aws.amazon.com/lambda/) and select the **Create function** button
 
-![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateFunction.jpg)
+    ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateFunction.jpg)
 
 1. Within the create function wizard, select the **Author from scratch** option.
 
-![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AuthorFromScatch.jpg)
+    ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AuthorFromScatch.jpg)
 
 1. Fill in the basic Lamdba funcation information:
 - Our example we named the Lamdba funcation **Stop_idle_EC2-G4dn_instance**
@@ -70,7 +70,7 @@ Next we will create a Lambda function. In the Lambda function, the function does
 - Under Permission > Change default execution role > **Use existing role** > Choose the previously created IAM role above
 - Once the required fields are filled out, Select the **Create funcation** button to continue.
 
-![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/createFuncationBasic.jpg)
+    ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/createFuncationBasic.jpg)
 
 1. Within the funcation overview dashboard, we will start by adding the Lamdba event **trigger** 
 - In the 'Select a trigger' box, select the **EventBridge (CloudWatch Events)** type
@@ -84,15 +84,15 @@ Next we will create a Lambda function. In the Lambda function, the function does
 - Within the **State** field, auto-complete the word **running**
 - Once complete select the **Add** on botton of page
 
-![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AddTrigger1.jpg)
+    ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AddTrigger1.jpg)
 
 When successfully completed, a notification will appear says that all subsystem between services have been established.
 
-![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/SuccessfulTrigger.jpg)
+    ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/SuccessfulTrigger.jpg)
 
 1. Finally, drop in the Python code into the **Code Source** section of the Lamdba Dashboard. Ensure you are in the **Code** section of console.
 
-![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CodeToolBar.jpg)
+    ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CodeToolBar.jpg)
 
 - Remove any pre-populated python code
 - **Copy** the snippet of python code below
