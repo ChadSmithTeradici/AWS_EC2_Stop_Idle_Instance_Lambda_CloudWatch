@@ -51,11 +51,16 @@ Select the **Next Permissions** button.
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateRoleReview.jpg)
 
 ## Create an Lamdba function ##
-Next we will create a Lambda function. In the Lambda function, we do two things:
+Next we will create a Lambda function. In the Lambda function, the function does two things:
 - Get the EC2 instance ID set focus on only G4dn instance types
 - Create an alarm and attach it to the EC2 instance
 
-After moving to the Lambda page, you should set the function setting as follows. Here, you must select the previously created role as existing role
+1. Select a AWS region that has EC2 Instance type available, the Lamdba function is designed to run in the same region. If you have other instances in other regions / loca zones, you should duplicate this setup as well. Enter the [Lamda dashboard](console.aws.amazon.com/lambda/) and select the **Create function** button
+
+
+
+
+
 
 ## Create CloudWatch events ##
 # Monitoring EC2 Gd4n idle resource shut down workflow #
