@@ -69,7 +69,9 @@ Next we will create a Lambda function. In the Lambda function, the function does
 - Select Architecture type as: **x86_64**
 - Under Permission > Change default execution role > **Use existing role** > Choose the previously created IAM role above
 
-![image](
+![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/createFuncationBasic.jpg)
+
+
 
 
 
