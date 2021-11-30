@@ -32,11 +32,11 @@ Create an [IAM role](https://console.aws.amazon.com/iamv2/home?#/roles) to provi
 
 1. Go to IAM -> Role -> Create Role. 
     
-1. Select the **Create role** button
+1. Select the **Create role** button, select the **Lamdba**
 
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateRole.jpg)
     
-Select the **Next Permissions** button, 
+Select the **Next Permissions** button.
 
 1. In Filter policies type in 'EC2Full' and Select the **AmazonEC2FullAccess**
 
