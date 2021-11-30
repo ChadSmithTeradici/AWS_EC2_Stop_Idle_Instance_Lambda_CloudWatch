@@ -50,8 +50,8 @@ Select the **Next Permissions** button.
 
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateRoleReview.jpg)
 
-## Create an IAM Role ##
-## Create CloudWatch Events ##
+## Create an Lamdba function ##
+## Create CloudWatch events ##
 # Monitoring EC2 Gd4n idle resource shut down workflow #
 
 # Disabling EC2 Gd4n idle rerource shut down workflow #
