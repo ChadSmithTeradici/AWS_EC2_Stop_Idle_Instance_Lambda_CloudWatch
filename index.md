@@ -138,7 +138,7 @@ def lambda_handler(event, context):
    
 **Note** there is notifcation status that will change from **Changes not deployed** to **Changes deployed**
 
-   ![image](
+   ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/PythonSuccDeploy.jpg)
 
 ## Create CloudWatch events ##
 # Monitoring EC2 Gd4n idle resource shut down workflow #
