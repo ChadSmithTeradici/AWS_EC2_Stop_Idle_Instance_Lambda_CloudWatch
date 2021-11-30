@@ -46,7 +46,7 @@ Select the **Next Permissions** button.
     
     Select **Next:Tags**
   
-1. After Option Tag section, 
+1. After *Option* Tag section, The role review page has you name the role. In this example it was named *Lamdba_EC2_long_running_instance*. 
 
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateRoleReview.jpg)
 
