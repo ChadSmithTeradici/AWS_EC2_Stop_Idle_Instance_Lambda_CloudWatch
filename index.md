@@ -57,8 +57,11 @@ Next we will create a Lambda function. In the Lambda function, the function does
 
 1. Select a AWS region that has EC2 Instance type available, the Lamdba function is designed to run in the same region. If you have other instances in other regions / loca zones, you should duplicate this setup as well. Enter the [Lamda dashboard](console.aws.amazon.com/lambda/) and select the **Create function** button
 
+![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateFunction.jpg)
 
+1. Within the create function wizard
 
+![image](
 
 
 
