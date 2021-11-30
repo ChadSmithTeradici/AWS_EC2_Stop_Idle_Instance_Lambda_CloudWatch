@@ -72,9 +72,20 @@ Next we will create a Lambda function. In the Lambda function, the function does
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/createFuncationBasic.jpg)
 
-1. Within the funcation overview dashboard, we will start by adding the **trigger** and **destintaion**
+1. Within the funcation overview dashboard, we will start by adding the Lamdba event **trigger** 
+- In the 'Select a trigger' box, select the **EventBridge (CloudWatch Events)** type
+- Under **Rule**, pick the **Create a new rule** option
+- Enter a **Rule name** to identify your rule, example : **Stop_idle_EC2-G4dn_Instances**
+- Under **Rule type**, select **Event pattern**
+- Use 'drop down box' to select **EC2**
+- Use second 'drop down box'to select **EC2 instance state-change notification**
+- 'Click' **Detail** to expand options
+- Ensure that the **State** box is 'checked'
+- Within the **State** field, auto-complete the word **running**
+- Once complete select the **Add** on botton of page
 
-![image](
+![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AddTrigger1.jpg)
+
 
 
 
