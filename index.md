@@ -88,7 +88,7 @@ Next we will create a Lambda function. In the Lambda function, the function does
 
 When successfully completed, a notification will appear says that all subsystem between services have been established.
 
-![image](
+![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/SuccessfulTrigger.jpg)
 
 1. Finally, drop in the Python code into the **Code Source** section of the Lamdba Dashboard. Ensure you are in the **Code** section of console.
 
