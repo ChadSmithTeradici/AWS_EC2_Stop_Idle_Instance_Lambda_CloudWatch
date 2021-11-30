@@ -130,8 +130,9 @@ def lambda_handler(event, context):
 ```
 1. In the **Code Source** text editor, select the **File** > **Save** option
 
-    ![image](
+    ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/SavedPythonCode.jpg)
 
+1. 
 
 
 
