@@ -146,6 +146,12 @@ JKFSAKFDJHA
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AlarmSet.jpg)
 
+jsdkskjd
+
+![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AlarmAction.jpg)
+
+dlksjal
+
 # Disabling EC2 G4dn idle rerource shut down workflow #
 
 
