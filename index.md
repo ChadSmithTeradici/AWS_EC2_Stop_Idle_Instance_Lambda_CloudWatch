@@ -142,6 +142,10 @@ def lambda_handler(event, context):
 
 # Monitoring EC2 G4dn idle resource shut down workflow #
 
+JKFSAKFDJHA
+
+![image](
+
 # Disabling EC2 G4dn idle rerource shut down workflow #
 
 
