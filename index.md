@@ -144,7 +144,7 @@ def lambda_handler(event, context):
 
 JKFSAKFDJHA
 
-![image](
+![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AlarmSet.jpg)
 
 # Disabling EC2 G4dn idle rerource shut down workflow #
 
