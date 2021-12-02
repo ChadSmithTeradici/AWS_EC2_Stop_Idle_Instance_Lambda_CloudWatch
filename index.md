@@ -152,7 +152,7 @@ The alarm status will change to **1/1 in alarm** and change to red front when th
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AlarmAction.jpg)
 
-A more detailed view of the CloudWatch alarm is in the [CloudWatch Dashboard](console.aws.amazon.com/cloudwatch/)
+A more detailed view of the CloudWatch alarm is in the [CloudWatch Dashboard](console.aws.amazon.com/cloudwatch/), which prodives a lot of details of the polling state,  thresholds and event status. 
 
 # Disabling EC2 G4dn idle rerource shut down workflow #
 
