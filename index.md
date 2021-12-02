@@ -142,15 +142,17 @@ def lambda_handler(event, context):
 
 # Monitoring EC2 G4dn idle resource shut down workflow #
 
-JKFSAKFDJHA
+The EC2 Dashboard shows summary information aboutCloudWatch alarms per instance.
+
+You get some general information about an alarm being assigned to the instance, by showing that the Lamdba Funcation did assigned a alarm to the instance with the **1 in alarm** in the alarm status column.
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AlarmSet.jpg)
 
-jsdkskjd
+The alarm status will change to **1/1 in alarm** and change to red front when the threshold criteria has been meet.
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AlarmAction.jpg)
 
-dlksjal
+A more detailed view of the CloudWatch alarm is in the [CloudWatch Dashboard](console.aws.amazon.com/cloudwatch/)
 
 # Disabling EC2 G4dn idle rerource shut down workflow #
 
