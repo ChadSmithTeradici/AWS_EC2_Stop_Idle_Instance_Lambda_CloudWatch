@@ -14,7 +14,7 @@ Controlling costs are important component in adopting cloud. It’s difficult to
 
 This guide will be focusing on one of the more expensive instance types, the G4dn/G5/G4ad (NVIDIA T4/10G & AMD V520) due to its high hourly consumption rate but Lamdba function can be applied to any instance type as well. Finally, Teradici CAS agent software does have an optional [idle resource shutdown service](https://www.teradici.com/web-help/cas_manager_as_a_service/reference/install_configure_cam_idle_shutdown/) that requires additional registry configuration on each workstation to achieve a similar result. The reality is that setting up this service diffucult to set-up and manys times not configured on the host systems. This proposed solution is enforced region wide, automatically applied on instance start-up and doesn’t require any configuration on the host systems.
 
-**AWS EC2 G4dn idle resource shutdown workflow, components and dependencies.**
+**AWS EC2 G-family idle resource shutdown workflow, components and dependencies.**
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/StopLongRunningInstances.jpg)
 
