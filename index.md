@@ -113,7 +113,7 @@ def put_cpu_alarm(instance_id):
         Namespace          = 'AWS/EC2' ,
         Statistic          = 'Average',
         Dimensions         = [{'Name': 'InstanceId', 'Value': instance_id}],
-        Period             = 900,
+        Period             = 600,
         EvaluationPeriods  = 3,
         Threshold          = 5,
         ComparisonOperator = 'LessThanOrEqualToThreshold',
@@ -144,11 +144,11 @@ def lambda_handler(event, context):
 
 The EC2 Dashboard shows summary information aboutCloudWatch alarms per instance.
 
-You get some general information about an alarm being assigned to the instance, by verifying that the Lamdba Function did assigned a alarm to the instance with the **1 in alarm** in the alarm status column.
+You get some general information about an alarm being assigned to the instance, by verifying that the Lambda Function did assigned a alarm to the instance with the **1 in alarm** in the alarm status column.
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AlarmSet.jpg)
 
-The alarm status will change to **1/1 in alarm** and change to red front when the threshold criteria has been meet and the instance was shutdown, this is an easy see with the EC2 Dashboard that CloudWatch event triggered a shutdown without leaving the console. 
+The alarm status will change to **1/1 in alarm** and change to red front when the threshold criteria has been met and the instance was shutdown, this is an easy see with the EC2 Dashboard that CloudWatch event triggered a shutdown without leaving the console. 
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AlarmAction.jpg)
 
