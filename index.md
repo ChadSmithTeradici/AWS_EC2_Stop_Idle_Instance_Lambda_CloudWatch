@@ -156,7 +156,7 @@ A more detailed view of the CloudWatch alarms are in the [CloudWatch Dashboard](
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CloudWatchAlarm.jpg)
 
-# Disabling EC2 G4dn idle rerource shut down workflow #
+# Disabling EC2 G4dn idle resource shut down workflow #
 
 
 
