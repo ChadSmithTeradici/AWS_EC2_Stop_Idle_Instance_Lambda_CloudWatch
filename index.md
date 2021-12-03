@@ -16,7 +16,7 @@ This guide will be focusing on one of the more expensive instance types, the G4d
 
 **AWS EC2 G4dn idle resource shutdown workflow, components and dependencies.**
 
-![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/StopLongRunninginstances.jpg)
+![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/StopLongRunningInstances.jpg)
 
 **A brief description of each step in workflow:**
 1. G4dn instance type is created by end-user or programmatically created in a region where workflow is deployed (regardless of AZ, subnet)
