@@ -22,9 +22,9 @@ This guide will be focusing on one of the more expensive instance types, the G4d
 1. G4dn instance type is created by end-user or programmatically created in a region where workflow is deployed (regardless of AZ, subnet)
 1. A defined Lambda EC2 event trigger assoicaed to a Lamdba function (λ) will execute.
 1. If the Instance type is in the G4dn instance family, it will create a CloudWatch event assoicated to the EC2 instances-id.
-1. CloudWatch will continue to ‘watch’ the instance and poll the instances CPU utilization every 5 minutes 
-1. If the CloudWatch detect  < 5% utilization three time in 15 minutes peroid, it will shut down the instance.
-1. If one or more of those periods are > 5% it will continue to poll every 15 minutes interval. 
+1. CloudWatch will continue to ‘watch’ the instance and poll the instances CPU utilization every 10 minutes 
+1. If the CloudWatch detect  < 7% utilization three time in 30 minutes peroid, it will shut down the instance.
+1. If one or more of those periods are > 7% it will continue to poll every 15 minutes interval. 
 
 # Configuring EC2 G4dn idle resource shut down workflow #
 ## Create an IAM Role ##
@@ -51,11 +51,11 @@ Select the **Next Permissions** button.
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateRoleReview.jpg)
 
 ## Create an Lamdba function ##
-Next we will create a Lambda function. In the Lambda function, the function does two things:
+Next we will create a Lambda function (λ). The function does two things:
 - Get the EC2 instance ID set focus on only G4dn instance types
 - Create an alarm and attach it to the EC2 instance
 
-1. Select a AWS region that has EC2 Instance type available, the Lamdba function is designed to run in the same region. If you have other instances in other regions / loca zones, you should duplicate this setup as well. Enter the [Lamda dashboard](console.aws.amazon.com/lambda/) and select the **Create function** button
+1. Select a AWS region that has EC2 Instance type available, the Lamdba function (λ) is designed to run in the same region. If you have other instances in other regions / loca zones, you should duplicate this setup as well. Enter the [Lamda dashboard](console.aws.amazon.com/lambda/) and select the **Create function** button
 
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CreateFunction.jpg)
 
@@ -63,7 +63,7 @@ Next we will create a Lambda function. In the Lambda function, the function does
 
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AuthorFromScatch.jpg)
 
-1. Fill in the basic Lamdba funcation information:
+1. Fill in the basic Lamdba funcation (λ) information:
 - Our example we named the Lamdba funcation **Stop_idle_EC2-G4dn_instance**
 - The Runtime field enter **Python 3.6**
 - Select Architecture type as: **x86_64**
@@ -132,7 +132,7 @@ def lambda_handler(event, context):
 
     ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/SavedPythonCode.jpg)
 
-7. Finally, you want to deploy the saved code to run as your Lamdba function. To do this select the **Deploy** button ontop of the text editor tool.
+7. Finally, you want to deploy the saved code to run as your Lamdba function (λ). To do this select the **Deploy** button ontop of the text editor tool.
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/DeployPythonCode.jpg)
    
@@ -144,7 +144,7 @@ def lambda_handler(event, context):
 
 The EC2 Dashboard shows summary information aboutCloudWatch alarms per instance.
 
-You get some general information about an alarm being assigned to the instance, by verifying that the Lambda Function did assigned a alarm to the instance with the **1 in alarm** in the alarm status column.
+You get some general information about an alarm being assigned to the instance, by verifying that the Lambda Function (λ) did assigned a alarm to the instance with the **1 in alarm** in the alarm status column.
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AlarmSet.jpg)
 
