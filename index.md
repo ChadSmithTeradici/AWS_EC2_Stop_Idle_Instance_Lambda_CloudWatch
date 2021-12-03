@@ -152,7 +152,7 @@ The alarm status will change to **1/1 in alarm** and change to red front when th
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/AlarmAction.jpg)
 
-A more detailed view of the CloudWatch alarm is in the [CloudWatch Dashboard](console.aws.amazon.com/cloudwatch/), which prodives a lot of details of the polling state,  thresholds and event status. 
+A more detailed view of the CloudWatch alarms are in the [CloudWatch Dashboard](console.aws.amazon.com/cloudwatch/), which prodives more details on the state of the instances. There very well be many alarms active at one time, so you should be note the instance-id of the instance  associated alarm you are want to look at.  The alarm dashboard is a little self-explanitory, the red line represents the 7% threshold, while the blue line represents the number of polls take and there associated CPU utilization. 
 
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/CloudWatchAlarm.jpg)
 
