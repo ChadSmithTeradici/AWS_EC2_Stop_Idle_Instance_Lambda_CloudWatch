@@ -158,5 +158,6 @@ A more detailed view of the CloudWatch alarms are in the [CloudWatch Dashboard](
 
 # Disabling EC2 G-family idle resource shut down workflow #
 
+![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/RemoveAlarm_While_running.jpg)
 
 
