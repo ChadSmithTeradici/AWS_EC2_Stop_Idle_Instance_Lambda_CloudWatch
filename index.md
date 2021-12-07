@@ -158,6 +158,10 @@ A more detailed view of the CloudWatch alarms are in the [CloudWatch Dashboard](
 
 # Disabling EC2 G-family idle resource shut down workflow #
 
+There are two ways to disable alarms and the associated idle power management either at an instance level or across the entire region. The first method is to manually delete the alarm after the EC2 instance is launched. This is done on a per-instance basis and if the instance stays in a powered-on state and the alarm has been deleted the instance will not be monitored and not shutdown when the CPU utilization dips. Be aware, if the instance is manually cycled, that change in power state will be detected by the Lambda function and reapply the CloudWatch alarm.![image](https://user-images.githubusercontent.com/92746483/145092030-471567f1-6cb6-4103-baf7-d8f21923122c.png)
+
+To manually delete an alarm enter the [CloudWatch Dashboard](console.aws.amazon.com/cloudwatch/), on the left-hand side select **All Alarms**. All alarms are associated to the instance-id of the EC2 instance, so you have correlate the your EC2 instance-id to the Alarm name. When you find the assoicated alarm, 'click' on the ckeck-box next to the Name, then slect the **Actions** menu and scroll to **Delete**.
+
 ![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/RemoveAlarm_While_running.jpg)
 
 
