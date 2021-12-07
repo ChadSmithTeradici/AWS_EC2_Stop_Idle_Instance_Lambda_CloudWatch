@@ -166,4 +166,5 @@ To manually delete an alarm enter the [CloudWatch Dashboard](console.aws.amazon.
 
 To disable a region wide idle resource management, the best approach is go into the IAM role and apply and expectict 
 
+![image](https://github.com/ChadSmithTeradici/AWS_EC2_Stop_Idle_Instance_Lambda_CloudWatch/blob/main/images/RevokeAccess.jpg)
 
